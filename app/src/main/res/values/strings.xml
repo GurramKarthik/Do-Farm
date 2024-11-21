@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Agri-Direct</string>
+    <string name="moto"> Smart Farming Starts with Smart Crops </string>
+    <string name="message"> </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="adminOpenText">
+        Grow your profits, connect with buyers, and sell your crops effortlessly. Start your journey todays
+    </string>
+
+    <string name="clientOpenText">
+        Find fresh crops, connect with trusted farmers, and buy in bulk with ease. Your reliable source for quality produce!
+    </string>
+</resources>

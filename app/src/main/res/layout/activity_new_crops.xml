@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Screens.NewCrops">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ready To Plant new crop 👨🏻‍🌾"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter the Details bellow"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Type of Season:  "
+                android:textSize="18sp"
+                android:layout_weight="4"
+                />
+
+            <Spinner
+                android:id="@+id/seasonsSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="Season"
+                android:background="@drawable/edit_text"
+                android:focusedByDefault="true"
+                android:padding="5dp"
+                android:layout_weight="6"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Type of Soil:  "
+                android:textSize="18sp"
+                android:layout_weight="4"
+                />
+
+            <Spinner
+                android:id="@+id/SoilSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="Soil"
+                android:background="@drawable/edit_text"
+                android:focusedByDefault="true"
+                android:padding="5dp"
+                android:layout_weight="6"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Water Avilability :  "
+                android:textSize="18sp"
+                android:layout_weight="4"
+                />
+
+            <Spinner
+                android:id="@+id/waterSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="water"
+                android:background="@drawable/edit_text"
+                android:focusedByDefault="true"
+                android:padding="5dp"
+                android:layout_weight="6"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Type of Crop:  "
+                android:textSize="18sp"
+                android:id="@+id/seasonTxt"
+                android:layout_weight="4"
+                />
+
+            <Spinner
+                android:id="@+id/cropSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:autofillHints="crop"
+                android:background="@drawable/edit_text"
+                android:focusedByDefault="true"
+                android:padding="5dp"
+                android:layout_weight="6"
+
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Crops"
+            android:id="@+id/generateCropsBtn"
+            />
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/CropsRecyclerView"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Response Test"
+            android:id="@+id/resTxt"
+            />
+
+    </LinearLayout>
+</ScrollView>
